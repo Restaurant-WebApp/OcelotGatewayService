@@ -33,4 +33,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/restaurant-microservices:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/restaurant-apigateway:latest
