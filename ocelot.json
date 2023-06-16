@@ -52,7 +52,7 @@
       "UpstreamPathTemplate": "/gateway/product",
       "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamPathTemplate": "/api/product",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "productapi",
@@ -77,7 +77,7 @@
       "UpstreamPathTemplate": "/gateway/addCart",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/addCart",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "cartapi",
@@ -89,7 +89,7 @@
       "UpstreamPathTemplate": "/gateway/updateCart",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/updateCart",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "cartapi",
@@ -101,7 +101,7 @@
       "UpstreamPathTemplate": "/gateway/getCart/{userId}",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/getCart/{userId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "cartapi",
@@ -113,7 +113,7 @@
       "UpstreamPathTemplate": "/gateway/removeCart",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/removeCart",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "cartapi",
