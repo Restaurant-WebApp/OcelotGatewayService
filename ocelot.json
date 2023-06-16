@@ -1,14 +1,14 @@
 {
   "Routes": [
     {
-      "UpstreamPathTemplate": "/gateway/product",
-      "UpstreamHttpMethod": [ "Post" ],
-      "DownstreamPathTemplate": "/api/product",
-      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/gateway/products",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/products",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "productapi",
-          "Port": 443
+          "Port": 80
         }
       ]
     },
