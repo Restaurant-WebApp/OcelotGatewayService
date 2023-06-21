@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  ocelotapi_gateway:
+    container_name: ocelotgateway
+    image: ${DOCKER_REGISTRY-}ocelotapigateway
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  productapi:
+    container_name: product-api
+    image: ${DOCKER_REGISTRY-}productapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  cartapi:
+    container_name: cart-api
+    image: ${DOCKER_REGISTRY-}cartapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  orderapi:
+    container_name: order-api
+    image: ${DOCKER_REGISTRY-}orderapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+  
